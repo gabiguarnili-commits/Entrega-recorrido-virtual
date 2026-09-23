@@ -1,0 +1,54 @@
+@font-face {
+    font-family: FuenteSATC;
+    src: url("fuentes/satc.ttf");
+}
+
+body {
+    margin: 0;
+    background-color: #eb5199;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.inicio {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: FuenteSATC, serif;
+    font-size: clamp(3rem, 10vw, 8rem);
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+}
+
+h1.sonando {
+    animation: latido 0.8s infinite alternate;
+}
+
+@keyframes latido {
+    from { transform: scale(1); }
+    to   { transform: scale(1.08); }
+}
+
+.pista {
+    margin-top: 1rem;
+    opacity: 0.6;
+}
+
+.portada {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    max-width: 700px;
+}
+
+.descripcion {
+    max-width: 600px;
+    margin: 1.5rem auto;
+    text-align: center;
+    line-height: 1.6;
+}

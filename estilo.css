@@ -116,20 +116,20 @@ h1.sonando {
     transition: color 0.25s ease;
 }
 
-.personaje.carrie img          { border-color: #c2185b33; }
-.personaje.carrie:hover img    { border-color: #c2185b; box-shadow: 0 0 14px #c2185b55; }
-.personaje.carrie:hover span   { color: #c2185b; }
+.personaje.carrie img          { border-color: #8c92ac; }
+.personaje.carrie:hover img    { border-color: #e8ccd7; box-shadow: 0 0 14px #8c92ac; }
+.personaje.carrie:hover span   { color: #e8ccd7; }
 
-.personaje.miranda img         { border-color: #c0202c33; }
-.personaje.miranda:hover img   { border-color: #c0202c; box-shadow: 0 0 14px #c0202c55; }
-.personaje.miranda:hover span  { color: #c0202c; }
+.personaje.miranda img         { border-color: #c0202c; }
+.personaje.miranda:hover img   { border-color: #c4d9f0; box-shadow: 0 0 14px #c0202c; }
+.personaje.miranda:hover span  { color: #c4d9f0; }
 
-.personaje.charlotte img        { border-color: #c79a3b33; }
-.personaje.charlotte:hover img  { border-color: #c79a3b; box-shadow: 0 0 14px #c79a3b55; }
-.personaje.charlotte:hover span { color: #c79a3b; }
+.personaje.charlotte img        { border-color: #e68fac; }
+.personaje.charlotte:hover img  { border-color: #fceaf8; box-shadow: 0 0 14px #e68fac; }
+.personaje.charlotte:hover span { color: #fceaf8; }
 
-.personaje.samantha img         { border-color: #17121233; }
-.personaje.samantha:hover img   { border-color: #171212; box-shadow: 0 0 14px #d4af3799; }
+.personaje.samantha img         { border-color: #731818; }
+.personaje.samantha:hover img   { border-color: #731818; box-shadow: 0 0 14px #d4af3799; }
 .personaje.samantha:hover span  { color: #d4af37; }
 
 /* ---------- Galería de escenas (fotos grandes) ---------- */
@@ -240,25 +240,25 @@ h1.sonando {
 /* ---------- Colores por personaje ---------- */
 
 body.carrie {
-    --bg: #ffe3ef;
-    --ink: #2a0f1e;
-    --accent: #c2185b;
+    --bg: #8c92ac;
+    --ink: #e8ccd7;
+    --accent: #f5f5f5;
 }
 
 body.miranda {
-    --bg: #e8f0f9;
-    --ink: #132742;
+    --bg: #c4d9f0;
+    --ink: #5a1818;
     --accent: #c0202c;
 }
 
 body.charlotte {
-    --bg: #fdf2e3;
-    --ink: #4a2e18;
-    --accent: #c79a3b;
+    --bg: #e68fac;
+    --ink: #fceaf8;
+    --accent: #e7d8e3;
 }
 
 body.samantha {
-    --bg: #171212;
+    --bg: #731818;
     --ink: #f5e9d8;
     --accent: #d4af37;
 }

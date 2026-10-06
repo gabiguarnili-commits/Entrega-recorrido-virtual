@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carrie Bradshaw · Recorrido virtual SATC</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main class="pagina-personaje">
+        <a href="index.html" class="volver">← Volver al inicio</a>
+
+        <h1>Carrie Bradshaw</h1>
+        <img src="images/carrie.jpg" alt="Carrie Bradshaw" class="foto-personaje">
+
+        <p>
+            Carrie escribe una columna sobre las relaciones en Nueva York, y sin darse cuenta
+            termina escribiendo también sobre su propia vida. Es la narradora de la serie:
+            cada episodio arranca con una pregunta que ella se plantea frente a su computadora.
+        </p>
+
+        <p>
+            Es conocida por su estilo, sobre todo por su amor a los zapatos
+            <a href="https://en.wikipedia.org/wiki/Manolo_Blahnik" target="_blank" rel="noopener">Manolo Blahnik</a>,
+            y por su historia con Mr. Big, una de las relaciones más recordadas de la serie.
+        </p>
+    </main>
+</body>
+</html>

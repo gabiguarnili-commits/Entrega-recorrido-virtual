@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Miranda Hobbes · Recorrido virtual SATC</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main class="pagina-personaje">
+        <a href="index.html" class="volver">← Volver al inicio</a>
+
+        <h1>Miranda Hobbes</h1>
+        <img src="images/miranda.jpg" alt="Miranda Hobbes" class="foto-personaje">
+
+        <p>
+            Miranda es abogada y la más racional del grupo. Al principio desconfía del amor
+            y del matrimonio, y su humor directo y sarcástico equilibra el idealismo de sus amigas.
+        </p>
+
+        <p>
+            Su relación con Steve y el nacimiento de su hijo Brady la obligan a replantear
+            el control que siempre quiso tener sobre su vida, incluyendo su mudanza a
+            <a href="https://en.wikipedia.org/wiki/Brooklyn" target="_blank" rel="noopener">Brooklyn</a>.
+        </p>
+    </main>
+</body>
+</html>

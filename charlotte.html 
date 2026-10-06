@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Charlotte York · Recorrido virtual SATC</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main class="pagina-personaje">
+        <a href="index.html" class="volver">← Volver al inicio</a>
+
+        <h1>Charlotte York</h1>
+        <img src="images/charlotte.jpg" alt="Charlotte York" class="foto-personaje">
+
+        <p>
+            Charlotte es galerista de arte y la más romántica de las cuatro. Llegó a Nueva York
+            creyendo en el matrimonio y en el príncipe azul, con ideas muy claras de cómo
+            debería ser su vida.
+        </p>
+
+        <p>
+            Su primer matrimonio termina, y con Harry, su segunda pareja, aprende que el amor
+            no siempre llega como lo imaginó. Vive en el elegante
+            <a href="https://en.wikipedia.org/wiki/Upper_East_Side" target="_blank" rel="noopener">Upper East Side</a>.
+        </p>
+    </main>
+</body>
+</html>

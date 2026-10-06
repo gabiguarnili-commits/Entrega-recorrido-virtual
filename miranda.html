@@ -6,11 +6,15 @@
     <title>Miranda Hobbes · Recorrido virtual SATC</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body class="miranda">
+    <audio id="cancion" src="audio/miranda.mp3" loop></audio>
+
     <main class="pagina-personaje">
         <a href="index.html" class="volver">← Volver al inicio</a>
 
-        <h1>Miranda Hobbes</h1>
+        <h1 id="titulo">Miranda Hobbes</h1>
+        <p class="pista">Toca el nombre</p>
+
         <img src="images/miranda.jpg" alt="Miranda Hobbes" class="foto-personaje">
 
         <p>
@@ -23,6 +27,23 @@
             el control que siempre quiso tener sobre su vida, incluyendo su mudanza a
             <a href="https://en.wikipedia.org/wiki/Brooklyn" target="_blank" rel="noopener">Brooklyn</a>.
         </p>
+
+        <section class="escenas">
+            <figure>
+                <img src="images/miranda-escena1.jpg" alt="Miranda, retrato">
+                <figcaption>Su carácter directo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/miranda-escena2.jpg" alt="Miranda con sus amigas">
+                <figcaption>Con sus amigas</figcaption>
+            </figure>
+            <figure>
+                <img src="images/miranda-escena3.jpg" alt="Miranda sentada">
+                <figcaption>Su vida en Nueva York</figcaption>
+            </figure>
+        </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -6,11 +6,15 @@
     <title>Carrie Bradshaw · Recorrido virtual SATC</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body class="carrie">
+    <audio id="cancion" src="audio/carrie.mp3" loop></audio>
+
     <main class="pagina-personaje">
         <a href="index.html" class="volver">← Volver al inicio</a>
 
-        <h1>Carrie Bradshaw</h1>
+        <h1 id="titulo">Carrie Bradshaw</h1>
+        <p class="pista">Toca el nombre</p>
+
         <img src="images/carrie.jpg" alt="Carrie Bradshaw" class="foto-personaje">
 
         <p>
@@ -24,6 +28,23 @@
             <a href="https://en.wikipedia.org/wiki/Manolo_Blahnik" target="_blank" rel="noopener">Manolo Blahnik</a>,
             y por su historia con Mr. Big, una de las relaciones más recordadas de la serie.
         </p>
+
+        <section class="escenas">
+            <figure>
+                <img src="images/carrie-escena1.jpg" alt="Carrie escribiendo en su apartamento">
+                <figcaption>Escribiendo su columna</figcaption>
+            </figure>
+            <figure>
+                <img src="images/carrie-escena2.jpg" alt="Carrie en una escena con Mr. Big">
+                <figcaption>Con Mr. Big</figcaption>
+            </figure>
+            <figure>
+                <img src="images/carrie-escena3.jpg" alt="Carrie caminando por Nueva York">
+                <figcaption>Caminando por la ciudad</figcaption>
+            </figure>
+        </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

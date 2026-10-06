@@ -6,11 +6,15 @@
     <title>Charlotte York · Recorrido virtual SATC</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body class="charlotte">
+    <audio id="cancion" src="audio/charlotte.mp3" loop></audio>
+
     <main class="pagina-personaje">
         <a href="index.html" class="volver">← Volver al inicio</a>
 
-        <h1>Charlotte York</h1>
+        <h1 id="titulo">Charlotte York</h1>
+        <p class="pista">Toca el nombre</p>
+
         <img src="images/charlotte.jpg" alt="Charlotte York" class="foto-personaje">
 
         <p>
@@ -24,6 +28,23 @@
             no siempre llega como lo imaginó. Vive en el elegante
             <a href="https://en.wikipedia.org/wiki/Upper_East_Side" target="_blank" rel="noopener">Upper East Side</a>.
         </p>
+
+        <section class="escenas">
+            <figure>
+                <img src="images/charlotte-escena1.jpg" alt="Charlotte bailando">
+                <figcaption>Su lado festivo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/charlotte-escena2.jpg" alt="Charlotte con cuello alto negro">
+                <figcaption>Su estilo clásico</figcaption>
+            </figure>
+            <figure>
+                <img src="images/charlotte-escena3.jpg" alt="Charlotte en su galería">
+                <figcaption>En su galería de arte</figcaption>
+            </figure>
+        </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

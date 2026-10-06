@@ -6,11 +6,15 @@
     <title>Samantha Jones · Recorrido virtual SATC</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body class="samantha">
+    <audio id="cancion" src="audio/samantha.mp3" loop></audio>
+
     <main class="pagina-personaje">
         <a href="index.html" class="volver">← Volver al inicio</a>
 
-        <h1>Samantha Jones</h1>
+        <h1 id="titulo">Samantha Jones</h1>
+        <p class="pista">Toca el nombre</p>
+
         <img src="images/samantha.jpg" alt="Samantha Jones" class="foto-personaje">
 
         <p>
@@ -23,6 +27,23 @@
             cáncer de mama sin perder su humor. Su vida social gira alrededor del
             <a href="https://en.wikipedia.org/wiki/Meatpacking_District,_Manhattan" target="_blank" rel="noopener">Meatpacking District</a>.
         </p>
+
+        <section class="escenas">
+            <figure>
+                <img src="images/samantha-escena1.jpg" alt="Samantha con vestido rojo">
+                <figcaption>Su seguridad y estilo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/samantha-escena2.jpg" alt="Samantha con gafas de sol">
+                <figcaption>Su actitud característica</figcaption>
+            </figure>
+            <figure>
+                <img src="images/samantha-escena3.jpg" alt="Samantha en un evento">
+                <figcaption>En un evento social</figcaption>
+            </figure>
+        </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

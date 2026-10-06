@@ -5,9 +5,14 @@
 
 body {
     margin: 0;
-    background-color: #fff0f6;
-    color: #2a0f1e;
+    background-color: var(--bg, #fff0f6);
+    color: var(--ink, #2a0f1e);
     font-family: sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+    color: var(--accent, inherit);
 }
 
 .inicio {
@@ -100,4 +105,75 @@ h1.sonando {
     max-width: 400px;
     display: block;
     margin: 1.5rem auto;
+}
+.escenas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2.5rem 0;
+}
+
+.escenas img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+    transition: transform 0.2s;
+}
+
+.escenas img:hover {
+    transform: scale(1.03);
+}
+
+.escenas figcaption {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    text-align: center;
+    opacity: 0.75;
+}
+body.carrie {
+    --bg: #ffe3ef;
+    --ink: #2a0f1e;
+    --accent: #c2185b;
+}
+
+body.miranda {
+    --bg: #e8f0f9;
+    --ink: #132742;
+    --accent: #c0202c;
+}
+
+body.charlotte {
+    --bg: #fdf2e3;
+    --ink: #4a2e18;
+    --accent: #c79a3b;
+}
+
+body.samantha {
+    --bg: #171212;
+    --ink: #f5e9d8;
+    --accent: #d4af37;
+}
+
+.pagina-personaje h1 {
+    color: var(--accent, inherit);
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    margin-bottom: 0.3rem;
+}
+
+.pagina-personaje .pista {
+    text-align: left;
+    opacity: 0.6;
+    margin: 0 0 1.5rem;
+}
+
+.foto-personaje {
+    border: 4px solid var(--accent, transparent);
+    border-radius: 10px;
+}
+
+.volver {
+    color: var(--accent, inherit);
+    font-weight: bold;
 }

@@ -8,11 +8,6 @@ body {
     background-color: var(--bg, #fff0f6);
     color: var(--ink, #2a0f1e);
     font-family: sans-serif;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-a {
-    color: var(--accent, inherit);
 }
 
 /* ---------- Portada (inicio) ---------- */
@@ -61,6 +56,14 @@ h1.sonando {
     line-height: 1.6;
 }
 
+.subtitulo {
+    text-align: center;
+    font-weight: normal;
+    opacity: 0.8;
+    margin: 2.5rem 0 1rem;
+    font-size: 1.2rem;
+}
+
 /* ---------- Galería de personajes (inicio) ---------- */
 
 .personajes {
@@ -83,7 +86,7 @@ h1.sonando {
 .personaje:nth-child(1) { animation-delay: 0s, 0.1s; }
 .personaje:nth-child(2) { animation-delay: 0.15s, 0.4s; }
 .personaje:nth-child(3) { animation-delay: 0.3s, 0.7s; }
-.personaje:nth-child(4) { animation-delay: 0.45s, 1s; }
+.personaje:nth-child(4) { animation-delay: 0.45s, 0.1s; }
 
 @keyframes aparecer {
     from { opacity: 0; transform: scale(0.7) translateY(15px); }
@@ -132,72 +135,66 @@ h1.sonando {
 .personaje.samantha:hover img   { border-color: #731818; box-shadow: 0 0 14px #d4af3799; }
 .personaje.samantha:hover span  { color: #d4af37; }
 
-/* ---------- Galería de escenas (fotos grandes) ---------- */
-
-./* ---------- Galería de escenas (collage tipo polaroid) ---------- */
+/* ---------- Galería de escenas (polaroids chicas y animadas) ---------- */
 
 .escenas {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr 1fr;
-    grid-template-rows: 180px 180px;
-    gap: 1.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem 1.6rem;
     margin: 2.5rem auto;
-    max-width: 900px;
-    padding: 0 1rem 1rem;
+    max-width: 640px;
+    padding: 0 1rem;
 }
 
 .escenas figure {
+    width: 180px;
     margin: 0;
     background: #fff;
-    padding: 0.6rem 0.6rem 1.8rem;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    padding: 0.5rem 0.5rem 1.4rem;
+    box-shadow: 0 6px 14px rgba(236, 26, 26, 0.2);
+    opacity: 0;
+    animation: caer 0.6s ease forwards;
 }
 
-.escenas figure:nth-child(1) { grid-column: 1; grid-row: 1 / 3; transform: rotate(-3deg); }
-.escenas figure:nth-child(2) { grid-column: 2; grid-row: 1; transform: rotate(2deg); }
-.escenas figure:nth-child(3) { grid-column: 3; grid-row: 1; transform: rotate(-2deg); }
-.escenas figure:nth-child(4) { grid-column: 2 / 4; grid-row: 2; transform: rotate(3deg); }
+.escenas figure:nth-child(1) { animation-delay: 0.1s; --girar: -6deg; }
+.escenas figure:nth-child(2) { animation-delay: 0.3s; --girar: 4deg; }
+.escenas figure:nth-child(3) { animation-delay: 0.5s; --girar: -4deg; }
+.escenas figure:nth-child(4) { animation-delay: 0.7s; --girar: 6deg; }
+
+@keyframes caer {
+    from {
+        opacity: 0;
+        transform: translateY(-25px) rotate(0deg) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotate(var(--girar)) scale(1);
+    }
+}
 
 .escenas figure:hover {
-    transform: rotate(0deg) scale(1.05);
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+    transform: rotate(0deg) scale(1.08) !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
     z-index: 2;
+    position: relative;
 }
 
 .escenas img {
-    width: 65%;
-    height: 65%;
+    width: 100%;
+    aspect-ratio: 4 / 5;
     object-fit: cover;
     display: block;
 }
 
 .escenas figcaption {
-    position: absolute;
-    bottom: 0.4rem;
-    left: 0.6rem;
-    right: 0.6rem;
-    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    font-size: 0.72rem;
     font-style: italic;
     text-align: center;
     color: #333;
-}
-
-@media (max-width: 600px) {
-    .escenas {
-        grid-template-columns: 1fr;
-        grid-template-rows: none;
-    }
-    .escenas figure:nth-child(1),
-    .escenas figure:nth-child(2),
-    .escenas figure:nth-child(3),
-    .escenas figure:nth-child(4) {
-        grid-column: 1;
-        grid-row: auto;
-        transform: none;
-    }
+    line-height: 1.3;
 }
 
 /* ---------- Páginas de personaje ---------- */
@@ -261,11 +258,4 @@ body.samantha {
     --bg: #731818;
     --ink: #f5e9d8;
     --accent: #d4af37;
-}
-.subtitulo {
-    text-align: center;
-    font-weight: normal;
-    opacity: 0.8;
-    margin: 2.5rem 0 1rem;
-    font-size: 1.2rem;
 }
